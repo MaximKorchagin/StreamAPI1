@@ -16,10 +16,5 @@ public class Main {
         Collections.sort(sortedList);
         System.out.println(sortedList);
 
-        Stream<Integer> stream = intList.stream();
-        stream.filter(x -> x > 0)
-                .filter(x -> x % 2 == 0)
-                .sorted(Comparator.naturalOrder())
-                .forEach(System.out::println);
     }
 }
